@@ -10,9 +10,9 @@ Take control of your computer with just your hand and voice. Use simple hand ges
 🎙️ Proton Chatbot: Voice commands to open apps, access files, and more.
 
 ## ⚙️ Requirements
-🐍 Python 3.8+
-📷 Webcam
-🎤 Microphone (for voice commands)
+🐍 Python 3.8+  
+📷 Webcam  
+🎤 Microphone (for voice commands)  
 
 ## 🚀 Installation
 ```bash
