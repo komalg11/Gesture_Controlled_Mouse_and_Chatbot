@@ -2,11 +2,11 @@
 Take control of your computer with just your hand and voice. Use simple hand gestures to move your mouse and perform clicks, plus talk to Proton, your voice-activated chatbot assistant.
 
 ## 🚩 Features
-🖱️ Move Cursor: Point with your index finger to move the mouse. /n
-👈 Left Click: Index + middle fingers close together with thumb up.
-👉 Right Click: Index + middle fingers close together with thumb + pinky up.
-🔽🔼 Scroll: Index + middle fingers close, thumb down to scroll down, pinky up to scroll up.
-✌️ Double Click: Show thumb up only.
+🖱️ Move Cursor: Point with your index finger to move the mouse.  
+👈 Left Click: Index + middle fingers close together with thumb up.  
+👉 Right Click: Index + middle fingers close together with thumb + pinky up.  
+🔽🔼 Scroll: Index + middle fingers close, thumb down to scroll down, pinky up to scroll up.  
+✌️ Double Click: Show thumb up only.  
 🎙️ Proton Chatbot: Voice commands to open apps, access files, and more.
 
 ## ⚙️ Requirements
@@ -30,12 +30,13 @@ pip install opencv-python cvzone numpy mouse
 ```
 
 ## ▶️ How to Use
-Run the main Python script.
-Control your mouse with hand gestures in front of the webcam.
+Run the main Python script.  
+Control your mouse with hand gestures in front of the webcam.  
 Speak to Proton for voice-controlled commands.
 
 ## 🌱 Future Ideas
-Add more hand gestures.
-Improve voice recognition.
+Add more hand gestures.  
+Improve voice recognition.  
 Create a user-friendly GUI.
+
 
