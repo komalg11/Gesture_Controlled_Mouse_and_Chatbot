@@ -1,0 +1,23 @@
+# Hand Gesture Mouse Control
+
+This project lets you control your mouse using hand gestures via a webcam.  
+It uses **OpenCV**, **cvzone**, and **HandDetector** to track your fingers and map them to mouse actions.
+
+## Features
+- **Move Cursor** – Point with index finger to move the mouse.
+- **Left Click** – Index + middle finger close together (thumb up).
+- **Right Click** – Index + middle finger close together (thumb + pinky up).
+- **Scroll Up / Down** – Index + middle finger close together, thumb down (scroll down) or pinky up (scroll up).
+- **Double Click** – Thumb up only.
+
+## Requirements
+- Python 3.8+
+- Webcam
+
+## Installation
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+python -m venv venv
+source venv/bin/activate  # On Windows use: venv\Scripts\activate
+pip install -r requirements.txt
