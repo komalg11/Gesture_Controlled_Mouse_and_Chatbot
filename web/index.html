@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Proton Assistant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+        #chat {
+            border: 1px solid #ccc;
+            background: white;
+            height: 300px;
+            overflow-y: auto;
+            padding: 10px;
+        }
+        #input {
+            width: 80%;
+            padding: 10px;
+        }
+        #send {
+            padding: 10px 15px;
+        }
+        .user {
+            color: #333;
+        }
+        .bot {
+            color: #0077cc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Proton Assistant</h1>
+    <div id="chat"></div>
+    <input id="input" type="text" placeholder="Type a message...">
+    <button id="send">Send</button>
+
+    <script type="text/javascript" src="/eel.js"></script>
+    <script>
+        // Add user message to chat
+        function addUserMsg(msg) {
+            document.getElementById("chat").innerHTML += `<div class="user"><b>You:</b> ${msg}</div>`;
+            document.getElementById("chat").scrollTop = document.getElementById("chat").scrollHeight;
+        }
+
+        // Add Proton's message to chat
+        function addAppMsg(msg) {
+            document.getElementById("chat").innerHTML += `<div class="bot"><b>Proton:</b> ${msg}</div>`;
+            document.getElementById("chat").scrollTop = document.getElementById("chat").scrollHeight;
+        }
+
+        // Make these available to Python via Eel
+        eel.expose(addUserMsg);
+        eel.expose(addAppMsg);
+
+        // Send user input to Python
+        document.getElementById("send").addEventListener("click", () => {
+            let msg = document.getElementById("input").value;
+            if (msg.trim() === "") return;
+            addUserMsg(msg);
+            eel.getUserInput(msg); // Call Python's getUserInput
+            document.getElementById("input").value = "";
+        });
+
+        // Send message on Enter key
+        document.getElementById("input").addEventListener("keypress", (e) => {
+            if (e.key === "Enter") {
+                document.getElementById("send").click();
+            }
+        });
+    </script>
+</body>
+</html>
