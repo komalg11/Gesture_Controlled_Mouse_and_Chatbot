@@ -2,7 +2,7 @@
 Take control of your computer with just your hand and voice. Use simple hand gestures to move your mouse and perform clicks, plus talk to Proton, your voice-activated chatbot assistant.
 
 ## 🚩 Features
-🖱️ Move Cursor: Point with your index finger to move the mouse.
+🖱️ Move Cursor: Point with your index finger to move the mouse. /n
 👈 Left Click: Index + middle fingers close together with thumb up.
 👉 Right Click: Index + middle fingers close together with thumb + pinky up.
 🔽🔼 Scroll: Index + middle fingers close, thumb down to scroll down, pinky up to scroll up.
