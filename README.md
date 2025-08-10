@@ -16,8 +16,18 @@ It uses **OpenCV**, **cvzone**, and **HandDetector** to track your fingers and m
 
 ## Installation
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/komalg11/Gesture_Controlled_Mouse_and_Chatbot.git
+cd Gesture_Controlled_Mouse_and_Chatbot
+
+# Create and activate a virtual environment
 python -m venv venv
-source venv/bin/activate  # On Windows use: venv\Scripts\activate
+
+# On macOS/Linux:
+source venv/bin/activate
+
+# On Windows:
+venv\Scripts\activate
+
+# Install dependencies
 pip install -r requirements.txt
+
